@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/092f285b09.js" crossorigin="anonymous"></script>
+    <title>Increment Counter</title>
+</head>
+<body>
+    <div class="counter-container">
+        <a href="https://twitter.com/home">
+            <i class="fab fa-twitter fa-3x"></i>
+        </a>
+        <!-- data-target can be retireved using apis/dbs for a dynamic counter -->
+        <div class="counter" data-target="9876"></div>
+        <span>Followers</span>
+    </div>
+    <div class="counter-container">
+        <a href="https://www.youtube.com/feed/subscriptions">
+            <i class="fab fa-youtube fa-3x"></i>
+        </a>
+        <div class="counter" data-target="50023"></div>
+        <span>Subscribers</span>
+    </div>
+    <div class="counter-container">
+        <a href="https://www.merriam-webster.com/dictionary/patronizing">
+            <i class="fab fa-patreon fa-3x"></i>
+        </a>
+        <div class="counter" data-target="2311"></div>
+        <span>Supporters</span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

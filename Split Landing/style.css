@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+
+:root{
+    --bg-colour: rgba(0,0,0,0.4);
+    --hover-width: 75%;
+    --hover-Owidth: 25%;
+    --speed: 1s;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: darkgray;
+}
+
+.split {
+    position: absolute;
+    width: 50%; /*As ther are two containers 50% each*/
+    height: 100%;
+    overflow: hidden;
+}
+
+.split.left {
+    left: 0;
+    background-image: url("linked.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.split.left::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(---bg-colour);
+}
+
+.split.right {
+    right: 0;
+    background-image: url("Party.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.split.right::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(---bg-colour);
+}
+
+.split.right, .split.left, .split.left::before, .split.right::before{
+    transition: all var(--speed) ease-in-out;
+}
+
+h1 {
+    font-size: 4rem;
+    color: aliceblue;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    top: 45%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    color: antiquewhite;
+    border: #fff solid 0.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 15rem;
+    padding: 1.5rem;
+}
+
+.btn:hover{
+    background-color: black;
+    opacity: 70%;
+}
+
+.hover-left .left {
+    width: var(--hover-width);
+}
+
+.hover-left .right {
+    width: var(--hover-Owidth);
+}
+
+.hover-right .left {
+    width: var(--hover-Owidth);
+}
+
+.hover-right .right {
+    width: var(--hover-width);
+}
+
+@media(max-width: 600px){
+    h1 {
+        font-size: 2rem;
+    }
+
+    .btn{
+        padding: 1.2rem;
+        width: 12rem;
+    }
+}
