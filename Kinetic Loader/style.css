@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.kinetic {
+    position: relative;
+    height: 80px;
+    width: 80px;
+}
+
+.kinetic::after, .kinetic::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom-color: greenyellow;
+    border-top-color: greenyellow;
+    animation: rotateA 1.5s linear infinite 1s;
+    border-radius: 50%;
+}
+
+.kinetic::before {
+    transform: rotate(90deg);
+    animation: rotateB 1.5s linear infinite;
+}
+
+
+@keyframes rotateA {
+    0% {
+        transform: rotate(270deg);
+    }
+
+    50% {
+        transform: rotate(450deg);
+    }
+
+    100% {
+        transform: rotate(630deg);
+    }
+}
+
+@keyframes rotateB {
+    0%{
+        transform: rotate(90deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(270deg);
+    }
+}
