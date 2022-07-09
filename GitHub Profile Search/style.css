@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgb(120, 9, 134);
+	color: black;
+	font-family: 'Lato', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	overflow: hidden;
+	margin: 0;
+}
+
+
+.logo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#gitLogo {
+    color: #fafafa;
+    font-size: 12rem;
+    margin-right: 20px;
+}
+
+.logo h1 {
+    color: #fafafa;
+}
+
+.user-form {
+	width: 100%;
+	max-width: 700px;
+}
+
+.user-form input {
+	width: 100%;
+	display: block;
+	background-color: #fafafa;
+	border: none;
+	border-radius: 5px;
+	padding: 15px;
+	font-size: 24px;
+	margin-bottom: 30px;
+	font-family: inherit;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5), 0 15px 40px rgba(0, 0, 0, 0.5);
+}
+
+.user-form input:focus {
+	outline: none;
+}
+
+.user-form input::placeholder {
+	color: grey;
+}
+
+.card {
+	max-width: 800px;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5), 0 15px 40px rgba(0, 0, 0, 0.5);
+    display: flex;
+    padding: 50px;
+
+    margin-bottom: 100px;
+}
+
+.avatar {
+    border-radius: 50%;
+    border: 5px solid rgb(120, 9, 134);
+    width: 150px;
+    height: 150px;
+}
+
+.user-info {
+    margin-left: 25px;
+}
+
+.user-info h2 {
+    margin-top: 0;
+}
+
+.user-info ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0;
+    max-width: 500px;
+}
+
+.user-info ul li {
+    display: flex;
+    align-items: center;
+}
+
+.user-info ul li strong{
+    font-size: 15px;
+    margin-left: 6px;
+}
+
+.repo {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(120, 9, 134);
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 5px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+@media(max-width: 500px) {
+    .card{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .user-form {
+        max-width: 450px;
+    }
+
+}
