@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+	background-color: lightblue;
+}
+
+main {
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	width: 800px;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	width: 350px;
+	height: 550px;
+	margin: 1rem;
+	background-color: white;
+	position: relative;
+	overflow: visible;
+	border-radius: 5px;
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+	width: 100%;
+	height: 400px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+    
+}
+
+.title {
+	padding: 0 10px;
+	display: flex;
+	position: relative;
+}
+
+.heart {
+	position: absolute;
+	right: 30px;
+	top: 8px;
+	font-size: 28px;
+	cursor: pointer;
+	color: black;
+	transition: color 0.4s;
+}
+
+.heart.liked {
+	color: red;
+	transition: color 0.4s;
+	animation: liked 0.4s ease;
+}
+
+.description p {
+	margin-top: 0;
+	padding: 0 10px;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	font-size: 14px;
+	margin-left: 10px;
+}
+
+.info small {
+	color: darkgrey;
+}
+.info strong {
+	color: rgb(110, 110, 110);
+}
+
+.float {
+	position: absolute;
+	color: red;
+	animation: float 0.8s linear;
+	transform: translate(-50%, -50%) scale(1);
+	font-size: 3rem;
+	opacity: 0;
+    pointer-events: none; 
+}
+
+@keyframes float {
+	0% {
+		transform: translate(-50%, -50%) scale(1);
+		opacity: 90%;
+	}
+	25% {
+		transform: translate(0%, -100%) scale(1.5);
+		opacity: 75%;
+	}
+	50% {
+		transform: translate(-100%, -200%) scale(1.5);
+		opacity: 50%;
+	}
+	75% {
+		transform: translate(0%, -300%) scale(1.5);
+		opacity: 25%;
+	}
+	100% {
+		transform: translate(-100%, -350%) scale(2);
+		opacity: 0%;
+	}
+}
+
+@keyframes liked {
+	0% {
+		transform: scale(0.7);
+	}
+	50% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@media (max-width: 800px) {
+	main {
+		max-width: 400px;
+	}
+}
