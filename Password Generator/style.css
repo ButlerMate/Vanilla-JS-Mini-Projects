@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgray;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+h2 {
+    margin: 10px 0 20px;
+    text-align: center;
+}
+
+.container {
+    background-color: black;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    width: 350px;
+    max-width: 100%;
+}
+
+.result-container {
+    background-color: rgb(133, 133, 133);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 12px;
+    height: 50px;
+    width: 100%;
+}
+
+#result {
+    word-wrap: break-word;
+    max-width: calc(100% - 40px); /*Button is 40px*/
+}
+
+.btn {
+    border: none;
+    background-color: lightgray;
+    color: black;
+    font-size: 16px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.result-container .btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+}
+
+.btn-large {
+    display: block;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.setting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+
+.container .btn-message{
+    background-color: #424242;
+    border-radius: 5px;
+    width: 140px;
+    color: white;
+    letter-spacing: 1.5px;
+    position: absolute;
+    left: 30%;
+    top: 35.5%;
+    display: none;
+    cursor: none;
+}
+
+.container .btn-message:focus{
+    outline: none;
+}
