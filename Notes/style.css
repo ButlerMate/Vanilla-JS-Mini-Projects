@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-top: 40px;
+    background-color: #00CCFF;
+}
+
+.add {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    background-color: #FF00CC;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.note {
+    background-color: #fff;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.2);
+    margin: 30px 20px;
+    height: 400px;
+    width: 400px;
+}
+
+.note .tools {
+    background-color: #CCFF00;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+.note .tools button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0 20px;
+}
+
+.note .tools button:hover {
+    color: #FF00CC;
+    
+}
+
+.note textarea {
+    font-family: inherit;
+    font-size: 18px;
+    border: none;
+    height: 100%;
+    width: 100%;
+    resize: none;
+    padding: 20px;
+}
+
+.note .main {
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.note textarea:focus{
+    outline: none;
+}
