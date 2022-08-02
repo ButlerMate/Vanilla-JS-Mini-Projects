@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: azure;
+	font-family: 'Lato', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	overflow: hidden;
+	margin: 0;
+}
+
+.panel-container {
+	background-color: white;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+	font-size: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 30px;
+	max-width: 605px;
+	text-align: center;
+}
+
+strong {
+	margin-bottom: 10px;
+}
+
+.rating img {
+	height: 75px;
+	width: 75px;
+	object-fit: cover;
+}
+
+.panel-container strong {
+	line-height: 20px;
+}
+
+.ratings-container {
+	display: flex;
+}
+
+.rating {
+	flex: 1;
+	cursor: pointer;
+	padding: 15px 20px;
+	margin: 10px 15px;
+}
+
+.rating:hover,
+.rating.active {
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.rating small {
+	font-size: 14px;
+	display: inline-block;
+	margin: 10px 0 0;
+	color: #555;
+}
+
+.rating.active small,
+.rating:hover small {
+	color: #111;
+}
+
+.btn {
+	background-color: rgba(58, 58, 58, .7);
+	border: none;
+	border-radius: 4px;
+	padding: 12px 30px;
+	font-weight: bold;
+	color: white;
+	pointer-events: none;
+	margin-top: 10px;
+}
+
+.btn.valid {
+	background-color: rgb(255, 196, 0);
+	cursor: pointer;
+	pointer-events: all;
+}
+
+.btn:active {
+	transform: scale(0.98);
+}
+
+.fa-heart {
+	color: red;
+	font-size: 30px;
+	margin-bottom: 10px;
+}
