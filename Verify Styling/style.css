@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(90deg, #ffffff, #ebebeb);
+    background: url(https://media.istockphoto.com/photos/bitcoin-cryptocurrency-standing-on-a-mastercard-credit-card-picture-id1350853643?k=20&m=1350853643&s=612x612&w=0&h=T9FOxjMC5DO5EN8adeRx3KkD5FRNVo8cMUiqHTBnAlI=);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Lato',sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
+    border-radius: 50px;
+    padding: 50px;
+    max-width: 1000px;
+    text-align: center;
+    backdrop-filter: blur(6px);
+}
+
+.code-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+    width: 700px;
+}
+
+.code {
+    border-radius: 5px;
+    font-size: 75px;
+    height: 120px;
+    width: 100px;
+    border: 1px solid #eee;
+    margin: 1%;
+    text-align: center;
+    font-weight: 300;
+    
+}
+
+.code::-webkit-outer-spin-button, .code::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.code:valid {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.info {
+    background-color: #eaeaea;
+    display: inline-block;
+    padding: 10px;
+    line-height: 20px;
+    max-width: 400px;
+    color: #777;
+    border-radius: 5px;
+}
+
+@media(max-width: 600px) {
+    .code-container {
+        flex-wrap: wrap;
+    }
+
+    .code {
+        font-size: 50px;
+        height: 80px;
+        max-width: 70px;
+    }
+}
