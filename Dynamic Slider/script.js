@@ -15,9 +15,7 @@ range.addEventListener('input', (e) => {
 	const label = e.target.nextElementSibling;
 
     const max = +e.target.max
-    const min = +e.target.min
     
-
     
     const left = value * ((rangeWidth - thumbWidth) / max) - (labelWidth - thumbWidth) / 2
 

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e6e6e6;
+    color: #4a4a4a;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+h1 {
+    color: rgb(187, 138, 236);
+    font-size: 8rem;
+    text-align: center;
+    opacity: 0.6;
+}
+
+form {
+    box-shadow: 0 4px 10px rgba(187, 138, 236, 0.2);
+    max-width: 100%;
+    width: 400px;
+}
+
+.input {
+    border: none;
+    color: #4a4a4a;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    display: block;
+    width: 100%;
+}
+
+.input::placeholder{
+    color: #d5d5d5;
+}
+
+.input:focus {
+    outline-color: rgb(187, 138, 236);
+}
+
+.todos {
+    background-color: #fafafa;
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+.todos li {
+    border-top: 1px solid #e5e5e5;
+    cursor: pointer;
+    font-size: 1.7rem;
+    padding: 1rem 2rem;
+}
+
+.todos li.complete{
+    color: #b6b6b6;
+    /* text-decoration: line-through; */
+    background-color: rgb(168, 241, 168);
+}
+
+small {
+    color: #b6b6b6;
+    margin-top: 15px;
+    text-align: center;
+}
